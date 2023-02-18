@@ -6,8 +6,8 @@ export const Container = styled.div`
   background: ${(props) => props.theme.color.glass};
   display: flex;
   flex-direction: row;
-  height: 80px;
-  padding: 0px 128px 0px 156px;
+  justify-content: space-between;
+  padding: 22px 156px 22px 128px;
   position: sticky;
   top: 0;
 `;
