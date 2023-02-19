@@ -18,7 +18,10 @@ export default function ContentOne() {
     <S.Container>
       <S.Yellow animate={PulseAnimate} transition={PulseTransition} />
       <S.Blue animate={PulseAnimate} transition={PulseTransition} />
-      <S.TitleContainer>
+      <S.TitleContainer
+        animate={{ y: -50, opacity: 1 }}
+        transition={{ ease: 'easeOut', duration: 2 }}
+      >
         <div>
           您即将进入
           {' '}
@@ -26,12 +29,20 @@ export default function ContentOne() {
         </div>
         官方网站
       </S.TitleContainer>
-      <S.SubTitle>
+      <S.SubTitle
+        animate={{ y: -50, opacity: 1 }}
+        transition={{ ease: 'easeOut', duration: 2, delay: 0.8 }}
+      >
         Droit
         Visions是国内新生代专注于创意类视频、音乐、图片素材授权、商业定制拍摄的专业服务提供商
         该网站素材和服务均由卓特视觉提供支持，与曲多多无关
       </S.SubTitle>
-      <S.CustomButton />
+      <S.ButtonAnimation
+        animate={{ y: -50, opacity: 1 }}
+        transition={{ ease: 'easeOut', duration: 2, delay: 1.6 }}
+      >
+        <S.CustomButton />
+      </S.ButtonAnimation>
     </S.Container>
   );
 }

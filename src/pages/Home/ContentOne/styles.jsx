@@ -33,33 +33,40 @@ export const Yellow = styled(motion.div)`
   width: 320px;
 `;
 
-export const TitleContainer = styled.div`
+export const TitleContainer = styled(motion.div)`
   display: flex;
   flex-direction: column;
   font-size: 64px;
   font-weight: 600;
   letter-spacing: 0em;
   line-height: 90px;
-  margin-top: 60px;
+  margin-top: 160px;
   text-align: center;
   z-index: 1;
+  opacity: 0;
 `;
 
 export const TitleTopLeft = styled.span`
   color: ${(props) => props.theme.color.blue};
 `;
 
-export const SubTitle = styled.div`
+export const SubTitle = styled(motion.div)`
   color: ${(props) => props.theme.color.gray};
   font-size: 16px;
   font-weight: 400;
   margin-bottom: 40px;
-  margin-top: 30px;
+  margin-top: 20px;
   text-align: center;
   width: 736px;
   z-index: 1;
+  opacity: 0;
+`;
+
+export const ButtonAnimation = styled(motion.div)`
+  opacity: 0;
 `;
 
 export const CustomButton = styled(Button)`
   z-index: 1;
+  opacity: 0;
 `;
