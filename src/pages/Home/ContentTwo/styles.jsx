@@ -7,8 +7,8 @@ export const Container = styled.div`
   flex-direction: column;
   gap: 60px;
   height: 460px;
-  padding-top: 40px;
   margin-top: -95px;
+  padding-top: 40px;
 `;
 
 export const Title = styled(motion.div)`
@@ -22,5 +22,3 @@ export const PartnerContainer = styled(motion.div)`
   flex-direction: row;
   gap: 32px;
 `;
-
-export const PartnerChild = styled(motion.div)``;

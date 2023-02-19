@@ -12,7 +12,7 @@ export const Container = styled.div`
 export const Blue = styled(motion.div)`
   background: ${(props) => props.theme.color.blue};
   border-radius: 360px;
-  filter: blur(80px);
+  filter: blur(50px);
   height: 480px;
   left: calc(50% - 480px / 2 + 184px);
   opacity: 0.16;

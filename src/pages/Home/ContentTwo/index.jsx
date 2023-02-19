@@ -1,18 +1,21 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 import Partner from './Partner';
 import * as S from './styles';
 import Pot from '../../../assets/icons/Pot.png';
+import Give from '../../../assets/icons/Give.png';
+import Shapes from '../../../assets/icons/Shapes.png';
 
 export default function ContentTwo() {
   const Services = [
     {
-      icon: '../../../assets/icons/Pot.png',
+      icon: Shapes,
       title: '满足客户多样化需求',
       subTitle:
         '通过与亚洲及本土的优秀摄影机构及个人紧密合作，正在持续不断扩大东方元素图片及影视资源',
     },
     {
-      icon: Pot,
+      icon: Give,
       title: '提供产品和咨询服务',
       subTitle:
         '专注于版权创意内容的传播，为本土创意人提供优质的版权产品和咨询服务，助力我国视觉版权服务市场蓬勃发展',
@@ -25,26 +28,44 @@ export default function ContentTwo() {
     },
   ];
 
+  const TitleTransition = {
+    whileInView: { opacity: 1 },
+    transition: { duration: 5, delay: 3.5 },
+    viewport: { once: true },
+  };
+
+  const PartnerTransition = {
+    initial: { opacity: 0, translateY: -50 },
+    animate: { opacity: 1, translateY: 0 },
+  };
+
+  const ServiceMap = Services.map((service, index) => (
+    <motion.div
+      id={service}
+      key={service.title}
+      initial={PartnerTransition.initial}
+      animate={PartnerTransition.animate}
+      transition={{ duration: 1.5, delay: 4 + index * 0.5 }}
+    >
+      <Partner
+        order={index}
+        icon={service.icon}
+        title={service.title}
+        subTitle={service.subTitle}
+      />
+    </motion.div>
+  ));
+
   return (
     <S.Container>
       <S.Title
-        whileInView={{ opacity: 1 }}
-        transition={{ duration: 5, delay: 3.5 }}
+        whileInView={TitleTransition.whileInView}
+        transition={TitleTransition.transition}
+        viewport={TitleTransition.viewport}
       >
         一站式正版商用素材
       </S.Title>
-      <S.PartnerContainer>
-        {Services.map((test, i) => (
-          <S.PartnerChild
-            id={test}
-            initial={{ opacity: 0, translateY: -50 }}
-            animate={{ opacity: 1, translateY: 0 }}
-            transition={{ duration: 1.5, delay: 4 + i * 0.5 }}
-          >
-            <Partner title={test.title} subTitle={test.subTitle} />
-          </S.PartnerChild>
-        ))}
-      </S.PartnerContainer>
+      <S.PartnerContainer>{ServiceMap}</S.PartnerContainer>
     </S.Container>
   );
 }
