@@ -16,8 +16,8 @@ export const Container = styled.div`
 
 export const Logo = styled(motion.img)`
   height: 36px;
-  width: 140px;
   margin-left: -300px;
+  width: 140px;
 `;
 
 export const CustomButton = styled(motion.div)`

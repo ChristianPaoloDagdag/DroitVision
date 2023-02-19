@@ -41,9 +41,9 @@ export const TitleContainer = styled(motion.div)`
   letter-spacing: 0em;
   line-height: 90px;
   margin-top: 160px;
+  opacity: 0;
   text-align: center;
   z-index: 1;
-  opacity: 0;
 `;
 
 export const TitleTopLeft = styled.span`
@@ -56,10 +56,10 @@ export const SubTitle = styled(motion.div)`
   font-weight: 400;
   margin-bottom: 40px;
   margin-top: 20px;
+  opacity: 0;
   text-align: center;
   width: 736px;
   z-index: 1;
-  opacity: 0;
 `;
 
 export const ButtonAnimation = styled(motion.div)`
@@ -67,6 +67,6 @@ export const ButtonAnimation = styled(motion.div)`
 `;
 
 export const CustomButton = styled(Button)`
-  z-index: 1;
   opacity: 0;
+  z-index: 1;
 `;
