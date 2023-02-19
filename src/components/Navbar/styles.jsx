@@ -11,6 +11,7 @@ export const Container = styled.div`
   padding: 22px 156px 22px 128px;
   position: sticky;
   top: 0;
+  z-index: 5;
 `;
 
 export const Logo = styled(motion.img)`
