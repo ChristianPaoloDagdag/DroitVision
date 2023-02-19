@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion';
 import styled from 'styled-components';
 
 export const Container = styled.div`
@@ -8,12 +9,12 @@ export const Container = styled.div`
   padding-bottom: 120px;
 `;
 
-export const Title = styled.div`
+export const Title = styled(motion.div)`
   font-weight: 600;
   font-size: 36px;
 `;
 
-export const SubTitle = styled.div`
+export const SubTitle = styled(motion.div)`
   color: ${(props) => props.theme.color.gray};
   font-size: 16px;
   font-weight: 400;
