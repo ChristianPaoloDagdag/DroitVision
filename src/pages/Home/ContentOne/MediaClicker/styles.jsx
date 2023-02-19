@@ -25,8 +25,8 @@ export const Container = styled(motion.div)`
 `;
 
 export const Icon = styled.img`
-  height: 18px;
-  width: 12px;
+  height: 24px;
+  width: 24px;
 `;
 
 export const Text = styled.div`

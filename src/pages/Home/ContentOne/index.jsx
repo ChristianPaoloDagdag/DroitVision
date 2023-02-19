@@ -2,6 +2,8 @@ import React from 'react';
 import MediaClicker from './MediaClicker';
 import * as S from './styles';
 import FeaturedMusic from '../../../assets/icons/Featured-Music.png';
+import CommercialImage from '../../../assets/icons/Commercial-Image.png';
+import CreativeVideo from '../../../assets/icons/Creative-Video.png';
 
 export default function ContentOne() {
   const PulseAnimate = {
@@ -31,9 +33,33 @@ export default function ContentOne() {
     transition: { ease: 'easeOut', duration: 2, delay: 1.6 },
   };
 
+  const MediaClickerTransition = {
+    animate: { y: -50, opacity: 1 },
+    transitionMusic: { ease: 'easeOut', duration: 2, delay: 2.8 },
+    transitionImage: { ease: 'easeOut', duration: 2, delay: 3.4 },
+    transitionVideo: { ease: 'easeOut', duration: 2, delay: 4.0 },
+  };
+
   return (
     <S.Container>
-      <MediaClicker icon={FeaturedMusic} />
+      <S.FeaturedMusicAnimation
+        animate={MediaClickerTransition.animate}
+        transition={MediaClickerTransition.transitionMusic}
+      >
+        <MediaClicker icon={FeaturedMusic} />
+      </S.FeaturedMusicAnimation>
+      <S.CommercialImageAnimation
+        animate={MediaClickerTransition.animate}
+        transition={MediaClickerTransition.transitionImage}
+      >
+        <MediaClicker icon={CommercialImage} />
+      </S.CommercialImageAnimation>
+      <S.CreativeVideoAnimation
+        animate={MediaClickerTransition.animate}
+        transition={MediaClickerTransition.transitionVideo}
+      >
+        <MediaClicker icon={CreativeVideo} />
+      </S.CreativeVideoAnimation>
       <S.Yellow animate={PulseAnimate} transition={PulseTransition} />
       <S.Blue animate={PulseAnimate} transition={PulseTransition} />
       <S.TitleContainer

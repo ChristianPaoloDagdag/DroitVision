@@ -70,3 +70,27 @@ export const CustomButton = styled(Button)`
   opacity: 0;
   z-index: 1;
 `;
+
+export const FeaturedMusicAnimation = styled(motion.div)`
+  left: calc(50% - 146px / 2 + 348px);
+  margin-top: 130px;
+  opacity: 0;
+  position: absolute;
+  z-index: 2;
+`;
+
+export const CommercialImageAnimation = styled(motion.div)`
+  left: calc(50% - 146px / 2 + 206px);
+  margin-top: 410px;
+  opacity: 0;
+  position: absolute;
+  z-index: 2;
+`;
+
+export const CreativeVideoAnimation = styled(motion.div)`
+  left: calc(50% - 146px / 2 - 353px);
+  margin-top: 230px;
+  opacity: 0;
+  position: absolute;
+  z-index: 2;
+`;
