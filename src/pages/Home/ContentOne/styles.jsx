@@ -1,7 +1,9 @@
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
+import Button from '../../../components/Button';
 
 export const Container = styled.div`
+  align-items: center;
   display: flex;
   flex-direction: column;
   height: 600px;
@@ -29,4 +31,35 @@ export const Yellow = styled(motion.div)`
   position: absolute;
   top: 160px;
   width: 320px;
+`;
+
+export const TitleContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  font-size: 64px;
+  font-weight: 600;
+  letter-spacing: 0em;
+  line-height: 90px;
+  margin-top: 60px;
+  text-align: center;
+  z-index: 1;
+`;
+
+export const TitleTopLeft = styled.span`
+  color: ${(props) => props.theme.color.blue};
+`;
+
+export const SubTitle = styled.div`
+  color: ${(props) => props.theme.color.gray};
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 40px;
+  margin-top: 30px;
+  text-align: center;
+  width: 736px;
+  z-index: 1;
+`;
+
+export const CustomButton = styled(Button)`
+  z-index: 1;
 `;
