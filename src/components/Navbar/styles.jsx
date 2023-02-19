@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion';
 import styled from 'styled-components';
 
 export const Container = styled.div`
@@ -12,7 +13,12 @@ export const Container = styled.div`
   top: 0;
 `;
 
-export const Logo = styled.img`
+export const Logo = styled(motion.img)`
   height: 36px;
   width: 140px;
+  margin-left: -300px;
+`;
+
+export const CustomButton = styled(motion.div)`
+  margin-right: -300px;
 `;

@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { motion } from 'framer-motion';
 
 export const Container = styled.div`
   display: flex;
@@ -6,7 +7,7 @@ export const Container = styled.div`
   height: 600px;
 `;
 
-export const Blue = styled.div`
+export const Blue = styled(motion.div)`
   background: ${(props) => props.theme.color.blue};
   border-radius: 360px;
   filter: blur(80px);
@@ -18,7 +19,7 @@ export const Blue = styled.div`
   width: 480px;
 `;
 
-export const Yellow = styled.div`
+export const Yellow = styled(motion.div)`
   background: ${(props) => props.theme.color.yellow};
   border-radius: 360px;
   filter: blur(80px);
