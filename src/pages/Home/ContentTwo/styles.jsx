@@ -6,7 +6,7 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   gap: 60px;
-  height: 460px;
+  min-height: 460px;
   margin-top: -95px;
   padding-top: 40px;
 `;
@@ -21,5 +21,9 @@ export const Title = styled(motion.div)`
 export const PartnerContainer = styled(motion.div)`
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 32px;
+  padding-left: 25px;
+  padding-right: 25px;
 `;

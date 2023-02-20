@@ -14,7 +14,7 @@ export const Container = styled(motion.div)`
   gap: 16px;
   height: 180px;
   padding: 24px;
-  width: 328.67px;
+  max-width: 328.67px;
 
   &._0 {
     background: linear-gradient(94.55deg, #f5e774 0%, #05a3e7 100%);
