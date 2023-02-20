@@ -7,21 +7,21 @@ export default function Footer() {
   const TitleTransition = {
     initial: { opacity: 0 },
     whileInView: { opacity: 1 },
-    transition: { duration: 3 },
+    transition: { duration: 5, delay: 0.6 },
     viewport: { once: true },
   };
 
   const SubTitleTransition = {
     initial: { opacity: 0 },
     whileInView: { opacity: 1 },
-    transition: { duration: 3, delay: 0.6 },
+    transition: { duration: 3, delay: 1.2 },
     viewport: { once: true },
   };
 
   const ButtonTransition = {
     initial: { opacity: 0 },
     whileInView: { opacity: 1 },
-    transition: { duration: 3, delay: 1.2 },
+    transition: { duration: 3, delay: 1.8 },
     viewport: { once: true },
   };
 

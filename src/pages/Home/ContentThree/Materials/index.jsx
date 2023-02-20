@@ -54,7 +54,7 @@ export default function Materials(props) {
           <S.SubTitleBottom
             initial={PartnerTransition.initial}
             whileInView={PartnerTransition.whileInView}
-            transition={{ duration: 1.5, delay: 1.8 + subtitle.length * 0.8 }}
+            transition={{ duration: 1.5, delay: 1.4 + subtitle.length * 0.8 }}
           >
             {subtitleBottom}
           </S.SubTitleBottom>
