@@ -7,19 +7,30 @@ export default function Navbar() {
   const Transition = { ease: 'easeOut', duration: 1.6 };
 
   const LogoAnimation = {
-    animate: { x: 300 },
+    initial: { opacity: 0, x: -300 },
+    animate: { opacity: 1, x: 0 },
     transition: Transition,
   };
 
   const ButtonAnimation = {
-    animate: { x: -300 },
+    initial: { opacity: 0, x: 300 },
+    animate: { opacity: 1, x: 0 },
     transition: Transition,
   };
 
   return (
     <S.Container>
-      <S.Logo src={Logo} animate={LogoAnimation.animate} transition={LogoAnimation.transition} />
-      <S.CustomButton animate={ButtonAnimation.animate} transition={ButtonAnimation.transition}>
+      <S.Logo
+        src={Logo}
+        initial={LogoAnimation.initial}
+        animate={LogoAnimation.animate}
+        transition={LogoAnimation.transition}
+      />
+      <S.CustomButton
+        initial={ButtonAnimation.initial}
+        animate={ButtonAnimation.animate}
+        transition={ButtonAnimation.transition}
+      >
         <Button />
       </S.CustomButton>
     </S.Container>

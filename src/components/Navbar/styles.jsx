@@ -6,20 +6,26 @@ export const Container = styled.div`
   backdrop-filter: blur(16px);
   background: ${(props) => props.theme.color.glass};
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   padding: 22px 156px 22px 128px;
   position: sticky;
   top: 0;
   z-index: 5;
+
+  @media (min-width: 585px) {
+    justify-content: space-between;
+  }
 `;
 
 export const Logo = styled(motion.img)`
   height: 36px;
-  margin-left: -300px;
   width: 140px;
 `;
 
 export const CustomButton = styled(motion.div)`
-  margin-right: -300px;
+  display: none;
+
+  @media (min-width: 585px) {
+    display: block;
+  }
 `;
