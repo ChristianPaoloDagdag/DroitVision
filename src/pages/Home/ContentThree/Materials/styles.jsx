@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion';
 import styled from 'styled-components';
 
 export const Container = styled.div`
@@ -37,7 +38,7 @@ export const SubTitleBottom = styled.div`
   margin-top: 37px;
 `;
 
-export const Image = styled.img`
+export const Image = styled(motion.img)`
   border-radius: 4px;
   height: 328.5px;
   width: 584px;

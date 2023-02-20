@@ -47,6 +47,13 @@ export default function ContentThree() {
     },
   ];
 
+  const TitleTransition = {
+    initial: { opacity: 0 },
+    whileInView: { opacity: 1 },
+    transition: { duration: 5 },
+    viewport: { once: true },
+  };
+
   const MaterialsMap = MaterialsList.map((material, index) => (
     <Materials
       title={material.title}
@@ -57,9 +64,17 @@ export default function ContentThree() {
       image={material.image}
     />
   ));
+
   return (
     <S.Container>
-      <S.Title>一站式正版商用素材</S.Title>
+      <S.Title
+        initial={TitleTransition.initial}
+        whileInView={TitleTransition.whileInView}
+        transition={TitleTransition.transition}
+        viewport={TitleTransition.viewport}
+      >
+        一站式正版商用素材
+      </S.Title>
       <S.MaterialsContainer>{MaterialsMap}</S.MaterialsContainer>
     </S.Container>
   );

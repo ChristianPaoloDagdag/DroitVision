@@ -7,6 +7,14 @@ export default function Materials(props) {
   } = props;
 
   const subtitleMap = subtitle.map((text) => <div key={text}>{text}</div>);
+
+  const ImageTransition = {
+    initial: { opacity: 0 },
+    whileInView: { opacity: 1, y: -50 },
+    transition: { ease: 'easeOut', duration: 3 },
+    viewport: { once: 'true' },
+  };
+
   return (
     <S.Container className={`_${order}`}>
       <S.Content>
@@ -16,7 +24,14 @@ export default function Materials(props) {
           <S.SubTitleBottom>{subtitleBottom}</S.SubTitleBottom>
         </S.SubTitle>
       </S.Content>
-      <S.Image src={image} />
+      <S.Image
+        src={image}
+        initial={ImageTransition.initial}
+        whileInView={ImageTransition.whileInView}
+        animate={ImageTransition.animate}
+        transition={ImageTransition.transition}
+        viewport={ImageTransition.viewport}
+      />
     </S.Container>
   );
 }

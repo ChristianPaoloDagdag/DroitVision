@@ -15,6 +15,7 @@ export const Title = styled(motion.div)`
   font-size: 36px;
   font-weight: 600;
   opacity: 0;
+  margin-bottom: 60px;
 `;
 
 export const PartnerContainer = styled(motion.div)`
