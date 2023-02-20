@@ -42,6 +42,32 @@ export default function ContentOne() {
 
   return (
     <S.Container>
+      <S.Yellow animate={PulseAnimate} transition={PulseTransition} />
+      <S.Blue animate={PulseAnimate} transition={PulseTransition} />
+      <S.TitleContainer
+        animate={TitleTransition.animate}
+        transition={TitleTransition.transition}
+      >
+        <S.TitleTop>
+          <div>您即将进入</div>
+          <S.TitleTopLeft>卓特视觉</S.TitleTopLeft>
+        </S.TitleTop>
+        官方网站
+      </S.TitleContainer>
+      <S.SubTitle
+        animate={SubTitleTransition.animate}
+        transition={SubTitleTransition.transition}
+      >
+        Droit
+        Visions是国内新生代专注于创意类视频、音乐、图片素材授权、商业定制拍摄的专业服务提供商
+        该网站素材和服务均由卓特视觉提供支持，与曲多多无关
+      </S.SubTitle>
+      <S.ButtonAnimation
+        animate={ButtonTransition.animate}
+        transition={ButtonTransition.transition}
+      >
+        <S.CustomButton />
+      </S.ButtonAnimation>
       <S.FeaturedMusicAnimation
         animate={MediaClickerTransition.animate}
         transition={MediaClickerTransition.transitionMusic}
@@ -60,33 +86,6 @@ export default function ContentOne() {
       >
         <MediaClicker icon={CreativeVideo} />
       </S.CreativeVideoAnimation>
-      <S.Yellow animate={PulseAnimate} transition={PulseTransition} />
-      <S.Blue animate={PulseAnimate} transition={PulseTransition} />
-      <S.TitleContainer
-        animate={TitleTransition.animate}
-        transition={TitleTransition.transition}
-      >
-        <div>
-          您即将进入
-          {' '}
-          <S.TitleTopLeft>卓特视觉</S.TitleTopLeft>
-        </div>
-        官方网站
-      </S.TitleContainer>
-      <S.SubTitle
-        animate={SubTitleTransition.animate}
-        transition={SubTitleTransition.transition}
-      >
-        Droit
-        Visions是国内新生代专注于创意类视频、音乐、图片素材授权、商业定制拍摄的专业服务提供商
-        该网站素材和服务均由卓特视觉提供支持，与曲多多无关
-      </S.SubTitle>
-      <S.ButtonAnimation
-        animate={ButtonTransition.animate}
-        transition={ButtonTransition.transition}
-      >
-        <S.CustomButton />
-      </S.ButtonAnimation>
     </S.Container>
   );
 }
