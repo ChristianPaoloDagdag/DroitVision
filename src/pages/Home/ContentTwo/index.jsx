@@ -63,7 +63,7 @@ export default function ContentTwo() {
         transition={TitleTransition.transition}
         viewport={TitleTransition.viewport}
       >
-        一站式正版商用素材
+        全球客户新生合作伙伴
       </S.Title>
       <S.PartnerContainer>{ServiceMap}</S.PartnerContainer>
     </S.Container>

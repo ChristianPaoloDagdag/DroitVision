@@ -6,7 +6,9 @@ export const Container = styled.div`
   align-items: center;
   display: flex;
   flex-direction: column;
-  min-height: 600px;
+  min-height: 710px;
+  position: relative;
+  overflow: hidden;
 
   @media (max-width: 582px) {
     margin-bottom: 160px;
@@ -20,6 +22,7 @@ export const Blue = styled(motion.div)`
   height: 480px;
   left: calc(50% - 480px / 2 + 184px);
   opacity: 0.16;
+  overflow: auto;
   position: absolute;
   top: 170px;
   width: 480px;
