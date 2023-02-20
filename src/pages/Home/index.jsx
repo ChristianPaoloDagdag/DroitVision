@@ -4,6 +4,7 @@ import Navbar from '../../components/Navbar';
 import ContentOne from './ContentOne';
 import ContentTwo from './ContentTwo';
 import Footer from '../../components/Footer';
+import ContentThree from './ContentThree';
 
 export default function Home() {
   return (
@@ -11,114 +12,7 @@ export default function Home() {
       <Navbar />
       <ContentOne />
       <ContentTwo />
-      <div>asdf</div>
-      <div>asdf</div>
-      <div>asdf</div>
-      <div>asdf</div>
-      <div>asdf</div>
-      <div>asdf</div>
-      <div>asdf</div>
-      <div>asdf</div>
-      <div>asdf</div>
-      <div>asdf</div>
-      <div>asdf</div>
-      <div>asdf</div>
-      <div>asdf</div>
-      <div>asdf</div>
-      <div>asdf</div>
-      <div>asdf</div>
-      <div>asdf</div>
-      <div>asdf</div>
-      <div>asdf</div>
-      <div>asdf</div>
-      {' '}
-      <div>asdf</div>
-      <div>asdf</div>
-      <div>asdf</div>
-      <div>asdf</div>
-      <div>asdf</div>
-      <div>asdf</div>
-      <div>asdf</div>
-      <div>asdf</div>
-      <div>asdf</div>
-      <div>asdf</div>
-      {' '}
-      <div>asdf</div>
-      <div>asdf</div>
-      <div>asdf</div>
-      <div>asdf</div>
-      <div>asdf</div>
-      <div>asdf</div>
-      <div>asdf</div>
-      <div>asdf</div>
-      <div>asdf</div>
-      <div>asdf</div>
-      {' '}
-      <div>asdf</div>
-      <div>asdf</div>
-      <div>asdf</div>
-      <div>asdf</div>
-      <div>asdf</div>
-      <div>asdf</div>
-      <div>asdf</div>
-      <div>asdf</div>
-      <div>asdf</div>
-      <div>asdf</div>
-      {' '}
-      <div>asdf</div>
-      <div>asdf</div>
-      <div>asdf</div>
-      <div>asdf</div>
-      <div>asdf</div>
-      <div>asdf</div>
-      <div>asdf</div>
-      <div>asdf</div>
-      <div>asdf</div>
-      <div>asdf</div>
-      {' '}
-      <div>asdf</div>
-      <div>asdf</div>
-      <div>asdf</div>
-      <div>asdf</div>
-      <div>asdf</div>
-      <div>asdf</div>
-      <div>asdf</div>
-      <div>asdf</div>
-      <div>asdf</div>
-      <div>asdf</div>
-      {' '}
-      <div>asdf</div>
-      <div>asdf</div>
-      <div>asdf</div>
-      <div>asdf</div>
-      <div>asdf</div>
-      <div>asdf</div>
-      <div>asdf</div>
-      <div>asdf</div>
-      <div>asdf</div>
-      <div>asdf</div>
-      {' '}
-      <div>asdf</div>
-      <div>asdf</div>
-      <div>asdf</div>
-      <div>asdf</div>
-      <div>asdf</div>
-      <div>asdf</div>
-      <div>asdf</div>
-      <div>asdf</div>
-      <div>asdf</div>
-      <div>asdf</div>
-      {' '}
-      <div>asdf</div>
-      <div>asdf</div>
-      <div>asdf</div>
-      <div>asdf</div>
-      <div>asdf</div>
-      <div>asdf</div>
-      <div>asdf</div>
-      <div>asdf</div>
-      <div>asdf</div>
-      <div>asdf</div>
+      <ContentThree />
       <Footer />
     </Container>
   );
