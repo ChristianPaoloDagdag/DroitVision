@@ -4,6 +4,10 @@ export const Container = styled.div`
   display: flex;
   flex-direction: row-reverse;
   gap: 32px;
+
+  &._1 {
+    flex-direction: row;
+  }
 `;
 
 export const Content = styled.div`
