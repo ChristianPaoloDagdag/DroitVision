@@ -20,13 +20,13 @@ export const Content = styled.div`
   width: 584px;
 `;
 
-export const Title = styled.div`
+export const Title = styled(motion.div)`
   font-size: 28px;
   font-weight: 600;
   width: 536px;
 `;
 
-export const SubTitle = styled.div`
+export const SubTitle = styled(motion.div)`
   color: ${(props) => props.theme.color.gray};
   font-size: 18px;
   font-weight: 400;
@@ -34,7 +34,7 @@ export const SubTitle = styled.div`
   width: 536px;
 `;
 
-export const SubTitleBottom = styled.div`
+export const SubTitleBottom = styled(motion.div)`
   margin-top: 37px;
 `;
 
