@@ -20,4 +20,7 @@ export const SubTitle = styled(motion.div)`
   font-weight: 400;
   margin-bottom: 42px;
   margin-top: 25px;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-align: center;
 `;
