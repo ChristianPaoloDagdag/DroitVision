@@ -17,19 +17,21 @@ export default function Materials(props) {
   const TitleTransition = {
     initial: { opacity: 0, y: 50 },
     whileInView: { opacity: 1, y: 0 },
-    transition: { ease: 'easeOut', duration: 3, delay: 0.6 },
+    transition: { ease: 'easeOut', duration: 3 },
     viewport: { once: 'true' },
   };
 
   const PartnerTransition = {
     initial: { opacity: 0, translateY: 50 },
     whileInView: { opacity: 1, translateY: 0 },
+    viewport: { once: 'true' },
   };
 
   const subtitleMap = subtitle.map((text, index) => (
     <motion.div
       initial={PartnerTransition.initial}
       whileInView={PartnerTransition.whileInView}
+      viewport={PartnerTransition.viewport}
       transition={{ duration: 1.5, delay: 1.2 + index * 0.8 }}
       key={text}
     >
@@ -55,6 +57,7 @@ export default function Materials(props) {
             initial={PartnerTransition.initial}
             whileInView={PartnerTransition.whileInView}
             transition={{ duration: 1.5, delay: 1.4 + subtitle.length * 0.8 }}
+            viewport={PartnerTransition.viewport}
           >
             {subtitleBottom}
           </S.SubTitleBottom>

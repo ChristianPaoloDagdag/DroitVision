@@ -20,4 +20,6 @@ export const MaterialsContainer = styled.div`
   flex-direction: column;
   gap: 80px;
   margin-top: 60px;
+  padding-left: 15px
+  padding-rigth: 15px;
 `;
