@@ -2,10 +2,11 @@ import { motion } from 'framer-motion';
 import styled from 'styled-components';
 
 export const Container = styled.div`
+  align-items: center;
   display: flex;
   flex-direction: column-reverse;
-  gap: 32px;
-  align-items: center;
+  justify-content: space-between;
+  width: 1200px;
 
   @media (min-width: 1242px) {
     flex-direction: row-reverse;
@@ -23,6 +24,7 @@ export const Content = styled.div`
   justify-content: center;
   padding-left: 15px;
   padding-right: 15px;
+  width: 545px;
 `;
 
 export const Title = styled(motion.div)`
