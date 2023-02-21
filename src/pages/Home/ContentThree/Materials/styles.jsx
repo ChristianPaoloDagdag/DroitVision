@@ -6,10 +6,11 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column-reverse;
   justify-content: space-between;
-  width: 1200px;
+  width: 500px;
 
   @media (min-width: 1242px) {
     flex-direction: row-reverse;
+    width: 1200px;
 
     &._1 {
       flex-direction: row;
@@ -22,9 +23,15 @@ export const Content = styled.div`
   flex-direction: column;
   gap: 16px;
   justify-content: center;
+  margin-top: 25px;
   padding-left: 15px;
   padding-right: 15px;
-  width: 545px;
+  width: 450px;
+
+  @media (min-width: 1242px) {
+    margin-top: 0px;
+    width: 545px;
+  }
 `;
 
 export const Title = styled(motion.div)`
