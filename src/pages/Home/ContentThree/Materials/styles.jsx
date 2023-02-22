@@ -6,7 +6,6 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column-reverse;
   justify-content: space-between;
-  width: 500px;
 
   @media (min-width: 1242px) {
     flex-direction: row-reverse;
@@ -26,7 +25,7 @@ export const Content = styled.div`
   margin-top: 25px;
   padding-left: 15px;
   padding-right: 15px;
-  width: 450px;
+  max-width: 450px;
 
   @media (min-width: 1242px) {
     margin-top: 0px;
