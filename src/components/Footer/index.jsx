@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import Button from '../Button';
 import * as S from './styles';
+import RandomCompoenent from './RandomComponent';
 
 export default function Footer() {
   const TitleTransition = {
@@ -50,6 +51,9 @@ export default function Footer() {
         viewport={ButtonTransition.viewport}
       >
         <Button />
+        { 1 + 2 }
+        <RandomCompoenent randomProps="paopaopaopao" randomPropsTwo="Dagdagdagdagdagdagdag" />
+        <RandomCompoenent randomProps="markmarkmarikarmiarmkam" randomPropsTwo="Dagdagdagdagdagdagdag" />
       </motion.div>
     </S.Container>
   );
